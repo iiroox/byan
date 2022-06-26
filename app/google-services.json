@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "61981509534",
+    "project_id": "byan-1d225",
+    "storage_bucket": "byan-1d225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61981509534:android:30836598e1da6f740e788f",
+        "android_client_info": {
+          "package_name": "com.example.byan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61981509534-65v63eqdjurmvvo9q7tufkfi9enhi036.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5PcoPaPJEyxE-pRXn2flqMILUc_rbk1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61981509534-65v63eqdjurmvvo9q7tufkfi9enhi036.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

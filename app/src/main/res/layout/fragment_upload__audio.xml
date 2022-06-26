@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addrec.Upload_Audio"
+    android:background="#FDF9E2"
+    >
+
+    <TextView
+        android:id="@+id/AddRecDecription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="يمكنك مساعدتنا في تحسين دقة التوقع عن طريق \n رفع مقطع صوتي للقارئ (بصيغة MP3 فقط) "
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/Explor"
+        android:layout_width="161dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="128dp"
+        android:onClick="onClick"
+        android:text="رفع"
+        android:textColor="#FDF9E2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/backfromUpload"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:background="@color/teal_700"
+        android:text="عودة"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/nameFile"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="52dp"
+        android:text="اضغط هنا لاختيار المقطع الصوتي"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/Explor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/res"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/reciterName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="اسم القارئ"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#9A515151"
+
+        app:layout_constraintBottom_toTopOf="@+id/res"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddRecDecription"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/Explor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddRecDecription"
+        app:layout_constraintVertical_bias="0.39" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

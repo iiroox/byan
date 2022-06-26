@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textadd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="22dp"
+    android:background="#FDF9E2"
+    >
+
+    <TextView
+        android:id="@+id/text_in_addrec"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="55dp"
+        android:text="إضافة قارئ"
+        android:textSize="34sp"
+        app:autoSizeMaxTextSize="22dp"
+        app:autoSizeMinTextSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:fontFamily="@font/open_sans_semibold"
+        android:textAlignment="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        />
+
+    <TextView
+        android:id="@+id/resultAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="106dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/name_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddRecDecription" />
+
+    <EditText
+        android:id="@+id/name_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="اسم القارئ"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#9A515151"
+        app:layout_constraintBottom_toTopOf="@+id/link_voice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultAdd"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"/>
+
+    <EditText
+        android:id="@+id/link_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="رابط المقطع الصوتي"
+        android:inputType="text"
+        android:textColorHint="#9A515151"
+        app:layout_constraintBottom_toTopOf="@+id/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/name_rec"
+        app:layout_constraintTop_toBottomOf="@+id/name_rec"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+        android:layout_marginEnd="32dp"
+        />
+
+    <Button
+        android:id="@+id/backfromURL"
+        android:layout_width="63dp"
+        android:layout_height="38dp"
+        android:text="عودة"
+        android:background="@color/teal_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:onClick="onClick"
+        android:text="رفع"
+        android:textColor="#FDF9E2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        />
+
+    <TextView
+        android:id="@+id/AddRecDecription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="يمكنك مساعدتنا في تحسين دقة التوقع عن طريق \n رفع اسم القارئ مع رابط للمقطع الصوتي الخاص به "
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/name_rec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_in_addrec"
+        app:layout_constraintVertical_bias="0.193" />
+</androidx.constraintlayout.widget.ConstraintLayout>
